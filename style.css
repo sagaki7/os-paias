@@ -1,7 +1,34 @@
 /*
-folhar de estilo de kev para o grupo os paiassss
+folha de estilo de kev para o grupo os paiassss
 */
 
-body{
-    background-color: #043164;
+/* Smartphone Portrait */
+
+/* Smartphone Landscape */
+@media (min-width: 576px){
+    body{
+        background-color: rgb(14, 14, 110);
+    }
+}
+
+/* tablet portrait */
+
+@media (min-width: 768px){
+    body{
+        background-color: rgb(110, 14, 86);
+    }
+}
+
+/* tablet landscap */
+@media (min-width: 992px){
+    body{
+        background-color: rgb(8, 119, 32);
+    }
+}
+
+/* pc */
+@media (min-width: 1200px){
+    body{
+        background-color: rgb(223, 139, 13);
+    }
 }
