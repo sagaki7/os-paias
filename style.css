@@ -2,12 +2,33 @@
 folha de estilo de kev para o grupo os paiassss
 */
 
+/* css reset */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* importaçao google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* layout */
+.container {
+    margin: 0 auto;
+    background-color: black;
+}
+
 /* Smartphone Portrait */
 
 /* Smartphone Landscape */
 @media (min-width: 576px){
     body{
         background-color: rgb(14, 14, 110);
+    }
+    /* layout */
+    .container {
+        max-width: 540px;
     }
 }
 
@@ -17,6 +38,9 @@ folha de estilo de kev para o grupo os paiassss
     body{
         background-color: rgb(110, 14, 86);
     }
+    /* layout */
+    .container {
+        max-width: 620px;
 }
 
 /* tablet landscap */
@@ -24,6 +48,9 @@ folha de estilo de kev para o grupo os paiassss
     body{
         background-color: rgb(8, 119, 32);
     }
+    /* layout */
+    .container {
+        max-width: 960px;
 }
 
 /* pc */
@@ -31,4 +58,7 @@ folha de estilo de kev para o grupo os paiassss
     body{
         background-color: rgb(223, 139, 13);
     }
+    /* layout */
+    .container {
+        max-width: 1140px;
 }
