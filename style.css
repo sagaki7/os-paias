@@ -18,6 +18,22 @@ folha de estilo de kev para o grupo os paiassss
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 800;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+
 /* topo do site */
 #topo {
     position: fixed;
@@ -70,11 +86,36 @@ nav ul li a {
     color: #fff
 }
 
+/* destaque */
+main {
+    height: 75vh;
+    background: url(img/Baner_dos_paias.jpg);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main h2 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+}
+
 /* Smartphone Landscape */
  @media (min-width: 576px){
     /* layout */
     .container {
       max-width: 540px;
+}
+/* destaque */
+main h1, main h2 {
+    text-shadow: #000 0.5em 0.5em 0.5em;
 }
 }
 
@@ -88,7 +129,19 @@ nav ul li a {
  @media (min-width: 768px){
     /* layout */
     .container {
-        max-width: 620px;
+        max-width: 720px;
+}
+/* destque */
+main {
+    height: 45vh;
+}
+
+main h1 {
+    font-size: 5.5em;
+}
+
+main h2 {
+    font-size: 2em;
 }
 }
 
@@ -97,6 +150,10 @@ nav ul li a {
     /* layout */
     .container {
         max-width: 960px;
+}
+/* destque */
+main {
+    height: 70vh;
 }
 }
 
