@@ -16,49 +16,126 @@ folha de estilo de kev para o grupo os paiassss
 /* layout */
 .container {
     margin: 0 auto;
-    background-color: black;
+}
+
+/* topo do site */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
 /* Smartphone Portrait */
 
+/* cabeçalho */
+header {
+    height: 60px;
+}
+
+#logo img {
+    width: 128px;
+    height: 128px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul {
+    right: 0;
+}
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff
+}
+
 /* Smartphone Landscape */
-@media (min-width: 576px){
-    body{
-        background-color: rgb(14, 14, 110);
-    }
+ @media (min-width: 576px){
     /* layout */
     .container {
-        max-width: 540px;
-    }
+      max-width: 540px;
+}
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* tablet portrait */
 
-@media (min-width: 768px){
-    body{
-        background-color: rgb(110, 14, 86);
-    }
+ @media (min-width: 768px){
     /* layout */
     .container {
         max-width: 620px;
 }
+}
 
 /* tablet landscap */
-@media (min-width: 992px){
-    body{
-        background-color: rgb(8, 119, 32);
-    }
+ @media (min-width: 992px){
     /* layout */
     .container {
         max-width: 960px;
 }
+}
 
 /* pc */
-@media (min-width: 1200px){
-    body{
-        background-color: rgb(223, 139, 13);
-    }
+ @media (min-width: 1200px){
     /* layout */
     .container {
         max-width: 1140px;
+}
+
+/* cabeçalho */
+header {
+    height: 120px;
+}
+#logo img {
+    width: 189px;
+    height: 189px;
+    margin-top: 30px;
+}
+label {
+    display: none;
+}
+nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+nav ul li {
+    float: left;
+    border: 0;
+}
+
+nav ul li a {
+    color: #343538
+}
+
+nav ul li a:hover {
+    color: #c00000;
+}
 }
